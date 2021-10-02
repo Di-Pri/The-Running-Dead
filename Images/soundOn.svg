@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="340" viewBox="0 0 340 340">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #5f5fb7;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="167.96" y1="2.01" x2="172.04" y2="339.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#8a8a8a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="171.03" y1="323.74" x2="168.98" y2="19.4" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="soundOn">
+    <circle class="cls-1" cx="170" cy="171" r="169"/>
+    <circle class="cls-2" cx="170" cy="171" r="155"/>
+    <g>
+      <path class="cls-3" d="M188.75,76.7l-67.63,47.41H75.46c-5.78,0-10.46,5.57-10.46,12.44v66.9c0,6.87,4.68,12.44,10.46,12.44h45.66l67.63,47.41c6.81,4.77,15.39-1.07,15.39-10.46V87.16C204.14,77.77,195.56,71.93,188.75,76.7Z"/>
+      <path class="cls-3" d="M265.38,126.78,218.84,140a4.45,4.45,0,0,1-5.48-3.37l-2.23-8.87A4.81,4.81,0,0,1,214.3,122l46.54-13.26a4.45,4.45,0,0,1,5.48,3.37l2.23,8.88A4.8,4.8,0,0,1,265.38,126.78Z"/>
+      <rect class="cls-3" x="217.87" y="159.47" width="57.13" height="18.72" rx="4.07"/>
+      <path class="cls-3" d="M260.84,229,214.3,215.71a4.81,4.81,0,0,1-3.17-5.84l2.23-8.87a4.45,4.45,0,0,1,5.48-3.38l46.54,13.25a4.81,4.81,0,0,1,3.17,5.84l-2.23,8.87A4.45,4.45,0,0,1,260.84,229Z"/>
+    </g>
+  </g>
+</svg>

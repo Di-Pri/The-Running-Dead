@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="130" viewBox="0 0 150 130">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cc1212;
+      }
+    </style>
+  </defs>
+  <g id="setting">
+    <path class="cls-1" d="M74.8,128.74,20.55,74.49C-27.32,26.61,26.93-27.64,74.8,20.24,123.34-28.29,177.58,26,129.05,74.49Z"/>
+  </g>
+</svg>

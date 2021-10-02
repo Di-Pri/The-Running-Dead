@@ -1,0 +1,347 @@
+.pos1 {
+  position: absolute;
+  top: 22vw;
+  left: 37vw;
+  animation: pos1 7s infinite linear;
+}
+
+@keyframes pos1 {
+  30% {
+    transform: scale(3);
+    top: 22vw;
+    left: 26vw;
+  }
+
+  100% {
+    transform: scale(4);
+    top: 23vw;
+    left: 80vw;
+  }
+}
+
+.pos2 {
+  position: absolute;
+  top: 22vw;
+  left: 37vw;
+  animation: pos2 6s infinite ease-in;
+}
+
+@keyframes pos2 {
+  100% {
+    transform: scale(5);
+    top: 23vw;
+    left: 90vw;
+  }
+}
+
+.pos3 {
+  position: absolute;
+  top: 23vw;
+  left: -15vw;
+  animation: pos3 9s infinite linear;
+}
+
+@keyframes pos3 {
+  0% {
+    transform: scale(3);
+    top: 23vw;
+    left: -15vw;
+  }
+
+  100% {
+    transform: scale(4);
+    top: 25vw;
+    left: 80vw;
+  }
+}
+
+.pos4 {
+  position: absolute;
+  top: 22vw;
+  left: 37vw;
+  animation: pos4 6s infinite linear;
+}
+
+@keyframes pos4 {
+  100% {
+    transform: scale(5);
+    top: 23vw;
+    left: -15vw;
+  }
+}
+
+.pos5 {
+  position: absolute;
+  top: 25vw;
+  left: 90vw;
+  animation: pos5 7s infinite linear;
+}
+
+@keyframes pos5 {
+  0% {
+    transform: scale(3);
+    top: 25vw;
+    left: 90vw;
+  }
+
+  100% {
+    transform: scale(4);
+    top: 24vw;
+    left: -10vw;
+  }
+}
+
+.pos6 {
+  position: absolute;
+  top: 22vw;
+  left: 37vw;
+  animation: pos6 8s infinite linear;
+}
+
+@keyframes pos6 {
+  20% {
+    transform: scale(3);
+    top: 23vw;
+    left: 50vw;
+  }
+
+  40% {
+    transform: scale(4);
+    top: 23vw;
+    left: 39vw;
+  }
+
+  75% {
+    z-index: 8;
+    transform: scale(7);
+    top: 23vw;
+    left: 39vw;
+  }
+
+  100% {
+    z-index: 7;
+    transform: scale(5);
+    top: 21vw;
+    left: -10vw;
+  }
+}
+
+.pos7 {
+  position: absolute;
+  top: 25vw;
+  left: 75vw;
+  animation: pos7 6s infinite linear;
+}
+
+@keyframes pos7 {
+  0% {
+    transform: scale(3);
+    top: 25vw;
+    left: 75vw;
+  }
+
+  35% {
+    transform: scale(3);
+    top: 23vw;
+    left: 60vw;
+  }
+
+  70% {
+    transform: scale(4);
+    top: 22vw;
+    left: 60vw;
+  }
+
+  100% {
+    transform: scale(5);
+    top: 23vw;
+    left: 80vw;
+  }
+}
+
+.pos8 {
+  position: absolute;
+  top: 22vw;
+  left: 37vw;
+  animation: pos8 8s infinite linear;
+}
+
+@keyframes pos8 {
+  30% {
+    transform: scale(3);
+    top: 24vw;
+    left: 20vw;
+  }
+
+  60% {
+    transform: scale(4);
+    top: 25vw;
+    left: 30vw;
+  }
+
+  100% {
+    transform: scale(5);
+    top: 24vw;
+    left: -10vw;
+  }
+}
+
+.fade_out {
+  opacity: 100%;
+  animation: fade_out 0.8s forwards;
+}
+
+@keyframes fade_out {
+  to {
+    opacity: 0;
+  }
+}
+
+.shrink {
+  animation: shrink_time 45s linear forwards;
+}
+
+@keyframes shrink_time {
+  0% {
+    transform: scaleX(1);
+    background-color: #31a331;
+  }
+
+  50% {
+    background-color: #f9d746;
+  }
+
+  100% {
+    transform: scaleX(0);
+    background-color: #f74848;
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.move:hover {
+  animation: move 0.01s linear 1 forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.delay {
+  animation-delay: 0.4s;
+}
+
+.delaySprite {
+  animation-delay: 7s;
+}
+
+.dance1 {
+  animation-name: dance1;
+  animation-duration: 0.65s;
+  animation-iteration-count: 18;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes dance1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.85);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dance2 {
+  animation-name: dance2;
+  animation-duration: 0.92s;
+  transform-origin: bottom;
+  animation-iteration-count: 16;
+  animation-timing-function: linear;
+}
+
+@keyframes dance2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: scale(1.02) rotate(-0.5deg);
+  }
+
+  20% {
+    transform: scale(1.02) rotate(0.5deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: scale(1.02) rotate(0.5deg);
+  }
+
+  50% {
+    transform: scale(1.02) rotate(-0.5deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: scale(1.02) rotate(-0.5deg);
+  }
+
+  80% {
+    transform: scale(1.02) rotate(0.5deg);
+  }
+
+  90% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1.02) rotate(-0.5deg);
+  }
+}

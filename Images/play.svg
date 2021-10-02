@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="340" viewBox="0 0 340 340">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #5f5fb7;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="167.96" y1="2.01" x2="172.04" y2="339.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#8a8a8a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="171.03" y1="323.74" x2="168.98" y2="19.4" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="play">
+    <circle class="cls-1" cx="170" cy="171" r="169"/>
+    <circle class="cls-2" cx="170" cy="171" r="155"/>
+    <path class="cls-3" d="M265.78,158.59,120,83.61A12.83,12.83,0,0,0,101.25,95V245A12.83,12.83,0,0,0,120,256.39l145.83-75A12.83,12.83,0,0,0,265.78,158.59Z"/>
+  </g>
+</svg>

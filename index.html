@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The running dead</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="icon" href="Images/logo.svg" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="assets.html">Assets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="sprites">
+            <div id="con1">
+              <div id="sprite1"></div>
+            </div>
+            <div id="con2">
+              <div id="sprite2"></div>
+            </div>
+            <div id="con3">
+              <div id="sprite3"></div>
+            </div>
+            <div id="con4">
+              <div id="sprite4"></div>
+            </div>
+            <div id="con5">
+              <div id="sprite5"></div>
+            </div>
+          </div>
+          <div id="game_foreground" class="hidden"></div>
+          <div id="game_ui">
+            <div id="score">
+              <div id="head"></div>
+              <div id="number">0/30</div>
+            </div>
+            <div id="health">
+              <div id="life1" class="redHeart"></div>
+              <div id="life2" class="redHeart"></div>
+              <div id="life3" class="redHeart"></div>
+            </div>
+            <div id="time_liquid"></div>
+            <div id="time_foreground"></div>
+          </div>
+          <div id="pause" class="hidden"></div>
+          <div id="mute" class="hidden"></div>
+          <div id="logo" class="hidden"></div>
+        </div>
+        <div id="title_screen"></div>
+        <div id="instructions" class="hidden">
+          <h2>Kill:</h2>
+          <h3>&#8598; 30 zombies</h3>
+          <h2>Avoid killing:</h2>
+          <h3>humans &#8599;</h3>
+          <h2>You have:</h2>
+          <h3>3 lives / 45 seconds</h3>
+        </div>
+        <div id="instructions_button"></div>
+        <div id="cross_button" class="hidden"></div>
+        <div id="start_button"></div>
+        <div id="win" class="hidden"></div>
+        <div id="game_over" class="hidden"></div>
+        <div id="restart_button" class="hidden"></div>
+        <div id="home_button" class="hidden"></div>
+        <div id="zombie1_over" class="hidden"></div>
+        <div id="zombie2_over" class="hidden"></div>
+        <div id="human1_win" class="hidden"></div>
+        <div id="human2_win" class="hidden"></div>
+        <audio id="zombie_sound" src="sound/lighter.mp3"></audio>
+        <audio id="human_sound" src="sound/human.mp3"></audio>
+        <audio id="background_sound" src="sound/background.mp3"></audio>
+        <audio id="win_screen_sound" src="sound/winScreen.mp3"></audio>
+        <audio id="game_over_sound" src="sound/gameOver.mp3"></audio>
+      </section>
+      <aside>
+        <img id="logo_aside" src="Images/logo.svg" alt="The Running Dead" />
+        <p>You need to kill 30 zombies in 45 seconds to win the game.</p>
+        <p>If you click a human, you will lose a life. You have three lives for the game.</p>
+        <h3>Click: Zombies</h3>
+        <img src="Images/zombie-boy.svg" alt="Zombie 1" class="sprites_aside" />
+        <img src="Images/zombie-man.svg" alt="Zombie 2" class="sprites_aside" />
+        <img src="Images/zombie-girl.svg" alt="Zombie 3" class="sprites_aside" />
+        <h3>Don't click: Humans</h3>
+        <img src="Images/human-boy.svg" alt="Human 1" class="sprites_aside" />
+        <img src="Images/human-girl.svg" alt="Human 2" class="sprites_aside" />
+        <p>The game was created by Diana Priediena as part of the course "Basic Animation" at KEA in 2020.</p>
+      </aside>
+    </main>
+    <script src="js/game.js"></script>
+  </body>
+</html>

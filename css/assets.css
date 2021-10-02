@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(#001235, #8523db) fixed;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 0.1vw aliceblue solid;
+  border-radius: 0.5vw;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+li {
+  margin: 0 3vw;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "impact", sans-serif;
+  font-size: 1.5vw;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+}
+
+main {
+  font-family: "Mistral", sans-serif;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  color: aliceblue;
+  text-align: center;
+}
+
+img {
+  max-width: 70vw;
+  margin: 2vw 4vw;
+}
+
+.small {
+  width: 12vw;
+}
+
+.large {
+  width: 41vw;
+}

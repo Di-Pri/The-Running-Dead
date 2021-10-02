@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
+
+body {
+  background-color: #001235;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "game info";
+  grid-template-columns: 78% 1fr;
+  margin: 1vw;
+}
+
+aside {
+  grid-area: info;
+  padding: 1vw;
+  font-size: 1.1vw;
+  color: aliceblue;
+  background: linear-gradient(#001235, #8523db);
+  border: 0.1vw aliceblue solid;
+  border-radius: 0.5vw;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Mistral", "Gaegu", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  color: #f9cb0d;
+}
+
+#logo_aside {
+  max-width: 14vw;
+}
+
+.sprites_aside {
+  width: 4vw;
+  height: 6vw;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 0.1vw aliceblue solid;
+  border-radius: 0.5vw;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+li {
+  margin: 0 3vw;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "impact", sans-serif;
+  font-size: 1.5vw;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+}
+
+#screen {
+  position: relative;
+  grid-area: game;
+  width: 75vw;
+  height: 42vw;
+  overflow: hidden;
+  border: 0.1vw aliceblue solid;
+  border-radius: 0.5vw;
+}
+
+#title_screen {
+  background-image: url("../Images/title-screen.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#start_button {
+  background-image: url("../Images/startButton.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 33vw;
+  left: 32vw;
+  width: 11vw;
+  height: 3.6vw;
+}
+
+#instructions_button {
+  background-image: url("../Images/instructions.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 28.5vw;
+  left: 32vw;
+  width: 11vw;
+  height: 3.6vw;
+}
+
+#instructions {
+  position: absolute;
+  left: 26.5vw;
+  top: 15.5vw;
+  width: 29%;
+  height: 38%;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-family: "Mistral", sans-serif, cursive;
+  font-size: 1vw;
+  text-align: center;
+  background: linear-gradient(#8523db, #0e1b58);
+  border: 0.1vw aliceblue solid;
+  border-radius: 1vw;
+}
+
+#instructions h2 {
+  color: #f9d746;
+}
+
+#instructions h3 {
+  line-height: 0.6vw;
+  color: #81fcaa;
+}
+
+#cross_button {
+  background-image: url("../Images/cross.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 16.2vw;
+  left: 46.2vw;
+  width: 1.5vw;
+  height: 1.3vw;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+}
+
+#game_background {
+  background-image: url("../Images/background.svg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#con1,
+#con2,
+#con3,
+#con4,
+#con5 {
+  position: absolute;
+}
+
+#sprite1 {
+  background-image: url("../Images/human-girl.svg");
+  background-size: 100%;
+  width: 1.85vw;
+  height: 4vw;
+}
+
+#sprite2 {
+  background-image: url("../Images/human-boy.svg");
+  background-size: 100%;
+  width: 1.5vw;
+  height: 4vw;
+}
+
+#sprite3 {
+  background-image: url("../Images/zombie-girl.svg");
+  background-size: 100%;
+  width: 1.82vw;
+  height: 4vw;
+}
+
+#sprite4 {
+  background-image: url("../Images/zombie-boy.svg");
+  background-size: 100%;
+  width: 2.2vw;
+  height: 4vw;
+}
+
+#sprite5 {
+  background-image: url("../Images/zombie-man.svg");
+  background-size: 100%;
+  width: 2.2vw;
+  height: 4vw;
+}
+
+#game_foreground {
+  background-image: url("../Images/foreground.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  pointer-events: none;
+}
+
+#logo {
+  background-image: url("../Images/logo.svg");
+  background-size: 100%;
+  position: absolute;
+  bottom: 0.5vw;
+  left: 0.5vw;
+  width: 7vw;
+  height: 2.8vw;
+  z-index: 21;
+}
+
+#head {
+  background-image: url("../Images/head-zombie.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0.8vw;
+  left: 0.8vw;
+  width: 2.7vw;
+  height: 3.2vw;
+}
+
+#number {
+  position: absolute;
+  top: 1.5vw;
+  left: 4.2vw;
+  font-size: 1.7vw;
+  color: aliceblue;
+}
+
+#health {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 4vw;
+  right: 1vw;
+  width: 7.5vw;
+}
+
+.redHeart {
+  background-image: url("../Images/heart-red.svg");
+  background-size: 100%;
+  width: 2vw;
+  height: 1.7vw;
+}
+
+.greyHeart {
+  background-image: url("../Images/heart-grey.svg");
+  background-size: 100%;
+  width: 2vw;
+  height: 1.7vw;
+}
+
+#time_liquid {
+  position: absolute;
+  transform-origin: left bottom;
+  width: 13.5vw;
+  height: 1.45vw;
+  top: 1.3vw;
+  right: 1.25vw;
+}
+
+#time_foreground {
+  background-image: url("../Images/time-foreground.svg");
+  background-size: 100%;
+  position: absolute;
+  width: 14vw;
+  height: 2vw;
+  top: 1vw;
+  right: 1vw;
+}
+
+#mute {
+  position: absolute;
+  width: 2.3vw;
+  height: 2.3vw;
+  bottom: 4vw;
+  right: 1vw;
+  z-index: 21;
+}
+
+.soundOn {
+  background-image: url("../Images/soundOn.svg");
+  background-size: 100%;
+  pointer-events: auto;
+}
+
+.soundOff {
+  background-image: url("../Images/soundOff.svg");
+  background-size: 100%;
+  pointer-events: auto;
+}
+
+#pause {
+  position: absolute;
+  width: 2.3vw;
+  height: 2.3vw;
+  bottom: 1vw;
+  right: 1vw;
+  z-index: 21;
+}
+
+.pause_button {
+  background-image: url("../Images/pause.svg");
+  background-size: 100%;
+  pointer-events: auto;
+}
+
+.play_button {
+  background-image: url("../Images/play.svg");
+  background-size: 100%;
+  pointer-events: auto;
+}
+
+#title_screen {
+  background-image: url("../Images/title-screen.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#start_button {
+  background-image: url("../Images/startButton.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 33vw;
+  left: 32vw;
+  width: 11vw;
+  height: 3.6vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#win {
+  background-image: url("../Images/win-screen.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#human1_win {
+  background-image: url("../Images/human-girl-happy.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 1.5vw;
+  right: 2vw;
+  width: 17.9vw;
+  height: 39vw;
+}
+
+#human2_win {
+  background-image: url("../Images/human-boy-happy.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 6vw;
+  left: 5vw;
+  width: 13vw;
+  height: 35vw;
+}
+
+#game_over {
+  background-image: url("../Images/game-over-screen.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#zombie1_over {
+  background-image: url("../Images/zombie-girl.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 2vw;
+  left: 3vw;
+  width: 17.5vw;
+  height: 38vw;
+}
+
+#zombie2_over {
+  background-image: url("../Images/zombie-boy.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  width: 20.5vw;
+  height: 38vw;
+}
+
+#restart_button {
+  background-image: url("../Images/restartButton.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 33.5vw;
+  left: 32vw;
+  width: 11vw;
+  height: 3.6vw;
+}
+
+#home_button {
+  background-image: url("../Images/home.svg");
+  background-size: 100%;
+  position: absolute;
+  top: 29vw;
+  left: 32vw;
+  width: 11vw;
+  height: 3.6vw;
+}
