@@ -1,3 +1,5 @@
+This project was built in 2020, during the first semester of my study course at KEA. The first big project where I used Javascript.
+
 An animated clicker game with good objects that give you points and bad objects that take your game lives. The idea is to collect a certain amount of points before the time runs out and have at least one life left at the end of the game.
 
 The game is based on a mood board, sketches, wireframes, paper prototype, activity diagram, peer feedback, style tile, and state machine diagram.
